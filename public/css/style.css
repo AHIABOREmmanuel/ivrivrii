@@ -2,7 +2,7 @@
 :root {
     --primary: #F6AE26;
     --light: #F1F8FF;
-    --dark:  #8B060A;
+    --red:  #8B060A;
 }
 
 .ff-secondary {
@@ -82,7 +82,7 @@
 
 
 /*** Navbar ***/
-.navbar-dark .navbar-nav .nav-link {
+.navbar-red .navbar-nav .nav-link {
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
@@ -94,47 +94,47 @@
     transition: .5s;
 }
 
-.sticky-top.navbar-dark .navbar-nav .nav-link {
+.sticky-top.navbar-red .navbar-nav .nav-link {
     padding: 20px 0;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-red .navbar-nav .nav-link:hover,
+.navbar-red .navbar-nav .nav-link.active {
     color: var(--primary) !important;
 }
 
-.navbar-dark .navbar-brand img {
+.navbar-red .navbar-brand img {
     max-height: 60px;
     transition: .5s;
 }
 
-.sticky-top.navbar-dark .navbar-brand img {
+.sticky-top.navbar-red .navbar-brand img {
     max-height: 45px;
 }
 
 @media (max-width: 991.98px) {
-    .sticky-top.navbar-dark {
+    .sticky-top.navbar-red {
         position: relative;
     }
 
-    .navbar-dark .navbar-collapse {
+    .navbar-red .navbar-collapse {
         margin-top: 15px;
         border-top: 1px solid rgba(255, 255, 255, .1)
     }
 
-    .navbar-dark .navbar-nav .nav-link,
-    .sticky-top.navbar-dark .navbar-nav .nav-link {
+    .navbar-red .navbar-nav .nav-link,
+    .sticky-top.navbar-red .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
     }
 
-    .navbar-dark .navbar-brand img {
+    .navbar-red .navbar-brand img {
         max-height: 45px;
     }
 }
 
 @media (min-width: 992px) {
-    .navbar-dark {
+    .navbar-red {
         position: absolute;
         width: 100%;
         top: 0;
@@ -143,9 +143,9 @@
         background: transparent !important;
     }
 
-    .sticky-top.navbar-dark {
+    .sticky-top.navbar-red {
         position: fixed;
-        background: var(--dark) !important;
+        background: var(--red) !important;
     }
 }
 
@@ -303,7 +303,7 @@
     z-index: 3;
     width: 0;
     height: 0;
-    border-left: 32px solid var(--dark);
+    border-left: 32px solid var(--red);
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
 }
